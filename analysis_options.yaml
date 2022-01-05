@@ -1,0 +1,9 @@
+include: package:very_good_analysis/analysis_options.2.4.0.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    # - "**/output/*.dart"
+    - "**/*.ignore.dart"
+  errors:
+    unused_element: ignore
