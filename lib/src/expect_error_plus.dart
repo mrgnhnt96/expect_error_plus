@@ -8,7 +8,7 @@ extension ExpectHelperX on Library {
   Code withCodeFrom(String fileName) {
     final content = _getFileContent(fileName);
 
-    final expectRegex = RegExp('@$ExpectError' r'\(\[(.*)\]\)');
+    final expectRegex = RegExp('$ExpectError' r'\(\[(.*)\]\)');
 
     final code = content.replaceAllMapped(expectRegex, (match) {
       final errorsRaw = match.group(1);
